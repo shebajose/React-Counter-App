@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import NavBar from './components/navbar';
 import Counters from './components/counters';
+import Counter from './hooks/Counter'
 import './App.css';
+import Users from './hooks/Users';
 
 class App extends Component {
 
@@ -53,6 +55,8 @@ handleDelete = counterId => {
           onDelete={this.handleDelete} />
       </main>
     </div>
+    <Counter/>
+    <Users/>
     </React.Fragment>
     );
   }
